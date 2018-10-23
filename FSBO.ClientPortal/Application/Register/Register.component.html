@@ -1,0 +1,164 @@
+﻿<div class="row">
+	<div class="col-md-6 col-md-offset-3">
+
+		<h2>Register</h2>
+
+		<form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+
+			<div class="row">
+				<div class="col-xs-12">
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+						<label for="username">Username</label>
+						<input type="text" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+						<div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+						<label for="password">Password</label>
+						<input type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+						<div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-xs-12">
+
+					<h3>Contact Information</h3>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+						<label for="email">Email</label>
+						<input type="text" class="form-control" name="email" [(ngModel)]="model.email" #email="ngModel" required />
+						<div *ngIf="f.submitted && !email.valid" class="help-block">Email is required</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !phone.valid }">
+						<label for="phone">Phone</label>
+						<input type="text" class="form-control" name="phone" [(ngModel)]="model.phone" #phone="ngModel" required />
+						<div *ngIf="f.submitted && !phone.valid" class="help-block">Phone is required</div>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-xs-12">
+
+					<h3>Your First Zip Code</h3>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !firstZip.valid }">
+						<label for="firstZip">Zip Code of Desired Trial Area</label>
+						<input type="number" pattern=".{5,5}" class="form-control" name="firstZip" [(ngModel)]="model.firstZip" #firstZip="ngModel" required />
+						<div *ngIf="f.submitted && !firstZip.valid" class="help-block">Password is required</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !firstZip.valid }">
+
+						<label for="firstZip">Which day of the week to charge?</label>
+						<p>After a month's time your account will be charged on the first occurance of this chosen date.</p>
+
+						<select class="form-control" name="dayToCharge" [(ngModel)]="model.dayToCharge" #dayToCharge="ngModel" required>
+							<option value="1">Sunday</option>
+							<option value="2">Monday</option>
+							<option value="3">Tuesday</option>
+							<option value="4">Wednesday</option>
+							<option value="5">Thursday</option>
+							<option value="6">Friday</option>
+							<option value="7">Saturday</option>
+						</select>
+
+						<div *ngIf="f.submitted && !dayToCharge.valid" class="help-block">First day of charging is required</div>
+
+						<p>Starting your trial account today means your account will be charged on XYZday, March 23rd, 2017.</p>
+					</div>
+
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-xs-12">
+
+					<h3>Default Payment Method</h3>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !paymentName.valid }">
+						<label for="paymentName">Name of Payment Method (optional)</label>
+						<input type="text" maxlength="128" class="form-control" name="paymentName" [(ngModel)]="model.paymentName" #paymentName="ngModel" />
+					</div>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !ccName.valid }">
+						<label for="ccName">Name As It Appears on Card</label>
+						<input type="text" class="form-control" name="ccName" [(ngModel)]="model.ccName" #ccName="ngModel" required />
+						<div *ngIf="f.submitted && !ccName.valid" class="help-block">Name is required</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !ccNumber.valid }">
+						<label for="ccNumber">Credit Card Number</label>
+						<input type="number" pattern=".{16,16}" class="form-control" name="ccNumber" [(ngModel)]="model.ccNumber" #ccNumber="ngModel" required />
+						<div *ngIf="f.submitted && !ccNumber.valid" class="help-block">Credit Card Number is required</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !expMonth.valid }">
+						<label for="expMonth">Expiration Month</label>
+						<input type="number" pattern=".{2,2}" class="form-control" name="expMonth" [(ngModel)]="model.expMonth" #expMonth="ngModel" required />
+						<div *ngIf="f.submitted && !expMonth.valid" class="help-block">Expiration Month is required</div>
+					</div>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !expYear.valid }">
+						<label for="expYear">Expiration Year</label>
+						<input type="number" pattern=".{4}" class="form-control" name="expYear" [(ngModel)]="model.expYear" #expYear="ngModel" required />
+						<div *ngIf="f.submitted && !expYear.valid" class="help-block">Expiration Year is required</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 form-inline">
+
+					<p>By registering you agree to our Terms of Service and have read our Privacy Policy.</p>
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !readTermsOfService.valid }">
+
+						<input type="checkbox" class="form-control" name="readTermsOfService" [(ngModel)]="model.readTermsOfService" #readTermsOfService="ngModel" required />
+
+						<label for="readTermsOfService">I have read and understand the <a [routerLink]="['/' + routeKeys.termsOfService]" target="_blank">Terms of Service</a></label>
+
+						<div *ngIf="f.submitted && !readTermsOfService.valid" class="help-block">All users are required to read and fully understand the Terms of Service.</div>
+					</div>
+
+					<br />
+
+					<div class="form-group" [ngClass]="{ 'has-error': f.submitted && !readPrivacyPolicy.valid }">
+
+						<input type="checkbox" class="form-control" name="readPrivacyPolicy" [(ngModel)]="model.readPrivacyPolicy" #readPrivacyPolicy="ngModel" required />
+
+						<label for="readPrivacyPolicy">I have read and understand the <a [routerLink]="['/' + routeKeys.privacyPolicy]" target="_blank">Privacy Policy</a></label>
+
+						<div *ngIf="f.submitted && !readPrivacyPolicy.valid" class="help-block">All users are required to read and fully understand the Privacy Policy.</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+
+					<div class="form-group">
+
+						<button [disabled]="loading" class="btn btn-success">Register</button>
+						<img *ngIf="loading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+						<a [routerLink]="['/' + routeKeys.login]" class="btn btn-link">Cancel</a>
+					</div>
+
+				</div>
+			</div>
+
+		</form>
+
+	</div>
+</div>

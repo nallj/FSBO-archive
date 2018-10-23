@@ -1,0 +1,9 @@
+
+*.lnk
+*.jfm
+
+\packages
+\node_modules
+
+\FSBO.ClientPortal\node_modules
+\FSBO.ClientPortal\wwwroot

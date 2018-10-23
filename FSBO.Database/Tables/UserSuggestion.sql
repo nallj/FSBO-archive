@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[UserSuggestion]
+(
+	[UserSuggestionId] INT PRIMARY KEY IDENTITY,
+	[UserId] INT NOT NULL,
+	[ZipCode] INT NOT NULL,
+	[SuggestedOn] DATETIMEOFFSET NOT NULL DEFAULT SYSDATETIMEOFFSET(),
+	[FulfilledOn] DATETIMEOFFSET,
+	CONSTRAINT [FK_UserSuggestion_UserId] FOREIGN KEY ([UserId]) REFERENCES [User]([UserId]) ON DELETE CASCADE
+)

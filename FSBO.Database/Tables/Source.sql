@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Source]
+(
+	[SourceId] INT NOT NULL IDENTITY PRIMARY KEY,
+	[HeadUri] VARCHAR(54) NOT NULL,
+	[IsConfirmed] BIT NOT NULL,
+	[AddedOn] DATETIMEOFFSET NOT NULL
+)

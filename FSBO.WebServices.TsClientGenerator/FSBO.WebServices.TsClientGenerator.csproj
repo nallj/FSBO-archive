@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+   <PropertyGroup>
+      <OutputType>Exe</OutputType>
+      <!--<TargetFramework>netcoreapp1.1</TargetFramework>-->
+      <TargetFramework>net462</TargetFramework>
+      <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+   </PropertyGroup>
+
+   <ItemGroup>
+     <PackageReference Include="NSwag.CodeGeneration.TypeScript" Version="11.1.2" />
+   </ItemGroup>
+
+</Project>

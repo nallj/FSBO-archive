@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="1" engine-version="3.6.0.0" clr-version="4.0.30319.42000" start-time="2017-01-31 20:20:29Z" end-time="2017-01-31 20:20:29Z" duration="0.925186">
+  <command-line><![CDATA[nunit3-console.exe  ..\..\..\FSBO.Installer.Test\bin\Debug\FSBO.Installer.Test.dll]]></command-line>
+  <test-suite type="Assembly" id="0-1002" name="FSBO.Installer.Test.dll" fullname="C:\Users\james.nall\Documents\Visual Studio 2015\Personal Projects\FSBO\FSBO.Installer.Test\bin\Debug\FSBO.Installer.Test.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-31 20:20:29Z" end-time="2017-01-31 20:20:29Z" duration="0.072136" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+    <environment framework-version="3.6.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="C:\Users\james.nall\Documents\Visual Studio 2015\Personal Projects\FSBO\packages\NUnit.ConsoleRunner.3.6.0\tools" machine-name="OPSJAMES" user="james.nall" user-domain="TCC" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\james.nall\Documents\Visual Studio 2015\Personal Projects\FSBO\packages\NUnit.ConsoleRunner.3.6.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="2924" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1003" name="FSBO" fullname="FSBO" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-31 20:20:29Z" end-time="2017-01-31 20:20:29Z" duration="0.038050" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+      <test-suite type="TestSuite" id="0-1004" name="Installer" fullname="FSBO.Installer" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-31 20:20:29Z" end-time="2017-01-31 20:20:29Z" duration="0.035039" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-suite type="TestSuite" id="0-1005" name="Test" fullname="FSBO.Installer.Test" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-31 20:20:29Z" end-time="2017-01-31 20:20:29Z" duration="0.032327" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <test-suite type="TestFixture" id="0-1000" name="InstallRunner" fullname="FSBO.Installer.Test.InstallRunner" classname="FSBO.Installer.Test.InstallRunner" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-01-31 20:20:29Z" end-time="2017-01-31 20:20:29Z" duration="0.027030" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+            <test-case id="0-1001" name="UnitOfWork_Scenario_ExpectedBehavior" fullname="FSBO.Installer.Test.InstallRunner.UnitOfWork_Scenario_ExpectedBehavior" methodname="UnitOfWork_Scenario_ExpectedBehavior" classname="FSBO.Installer.Test.InstallRunner" runstate="Runnable" seed="1011540699" result="Passed" start-time="2017-01-31 20:20:29Z" end-time="2017-01-31 20:20:29Z" duration="0.010715" asserts="1" />
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

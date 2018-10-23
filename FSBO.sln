@@ -1,0 +1,152 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{24F84347-9ABC-41BA-94C0-A8D616CB67D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSBO.MainSite", "FSBO.MainSite\FSBO.MainSite.csproj", "{CA6DACD7-8731-448B-A0C3-F9C8B95D8234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSBO.Application", "FSBO.Application\FSBO.Application.csproj", "{14415229-99C1-4683-BF51-EE57AC2A7E77}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "FSBO.Database", "FSBO.Database\FSBO.Database.sqlproj", "{082931F8-35C9-466D-8DD3-234F2FD47642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSBO.Scraper", "FSBO.Scraper\FSBO.Scraper.csproj", "{4E419BEA-595C-4E0D-88EB-92800E73732E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSBO.Installer", "FSBO.Installer\FSBO.Installer.csproj", "{7860CC16-2D4E-4827-9388-B966EF696A3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSBO.DAL", "FSBO.DAL\FSBO.DAL.csproj", "{DEF15B47-40B6-4C85-B4C3-43528AFC8B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSBO.Installer.Test", "FSBO.Installer.Test\FSBO.Installer.Test.csproj", "{B0FC6AE4-B159-46C7-9A1A-9E328BB23694}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSBO.WebServices.Client", "FSBO.WebServices.Client\FSBO.WebServices.Client.csproj", "{F3FF764C-F191-4A93-B942-FCFC7D520C56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSBO.WebServices", "FSBO.WebServices\FSBO.WebServices.csproj", "{FBE1DA35-8886-4D79-91BF-094BB138AEE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSBO.WebServices.TsClientGenerator", "FSBO.WebServices.TsClientGenerator\FSBO.WebServices.TsClientGenerator.csproj", "{046D5B50-EC17-46AF-A8F9-CF1B4015EB0A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSBO.WebServices.CsClientGenerator", "FSBO.WebServices.CsClientGenerator\FSBO.WebServices.CsClientGenerator.csproj", "{34125E08-7BA2-4F7D-AC0B-8AC8030BE90F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSBO.Distributor", "FSBO.Distributor\FSBO.Distributor.csproj", "{C6FA9846-CCCB-4761-BFED-30F12C674020}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FSBO.ClientPortal", "FSBO.ClientPortal\FSBO.ClientPortal.csproj", "{5CB531B5-4A2E-442D-9824-4BC7747F9380}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{81228A63-11B5-4ED2-A6EB-EB07A4E0A52A}"
+	ProjectSection(SolutionItems) = preProject
+		.tfignore = .tfignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA6DACD7-8731-448B-A0C3-F9C8B95D8234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA6DACD7-8731-448B-A0C3-F9C8B95D8234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA6DACD7-8731-448B-A0C3-F9C8B95D8234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA6DACD7-8731-448B-A0C3-F9C8B95D8234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14415229-99C1-4683-BF51-EE57AC2A7E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14415229-99C1-4683-BF51-EE57AC2A7E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14415229-99C1-4683-BF51-EE57AC2A7E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14415229-99C1-4683-BF51-EE57AC2A7E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082931F8-35C9-466D-8DD3-234F2FD47642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{082931F8-35C9-466D-8DD3-234F2FD47642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{082931F8-35C9-466D-8DD3-234F2FD47642}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{082931F8-35C9-466D-8DD3-234F2FD47642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{082931F8-35C9-466D-8DD3-234F2FD47642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{082931F8-35C9-466D-8DD3-234F2FD47642}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4E419BEA-595C-4E0D-88EB-92800E73732E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E419BEA-595C-4E0D-88EB-92800E73732E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E419BEA-595C-4E0D-88EB-92800E73732E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E419BEA-595C-4E0D-88EB-92800E73732E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7860CC16-2D4E-4827-9388-B966EF696A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7860CC16-2D4E-4827-9388-B966EF696A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7860CC16-2D4E-4827-9388-B966EF696A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7860CC16-2D4E-4827-9388-B966EF696A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEF15B47-40B6-4C85-B4C3-43528AFC8B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF15B47-40B6-4C85-B4C3-43528AFC8B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF15B47-40B6-4C85-B4C3-43528AFC8B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF15B47-40B6-4C85-B4C3-43528AFC8B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0FC6AE4-B159-46C7-9A1A-9E328BB23694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0FC6AE4-B159-46C7-9A1A-9E328BB23694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0FC6AE4-B159-46C7-9A1A-9E328BB23694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0FC6AE4-B159-46C7-9A1A-9E328BB23694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3FF764C-F191-4A93-B942-FCFC7D520C56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3FF764C-F191-4A93-B942-FCFC7D520C56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3FF764C-F191-4A93-B942-FCFC7D520C56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3FF764C-F191-4A93-B942-FCFC7D520C56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBE1DA35-8886-4D79-91BF-094BB138AEE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE1DA35-8886-4D79-91BF-094BB138AEE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE1DA35-8886-4D79-91BF-094BB138AEE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE1DA35-8886-4D79-91BF-094BB138AEE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{046D5B50-EC17-46AF-A8F9-CF1B4015EB0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{046D5B50-EC17-46AF-A8F9-CF1B4015EB0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{046D5B50-EC17-46AF-A8F9-CF1B4015EB0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{046D5B50-EC17-46AF-A8F9-CF1B4015EB0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34125E08-7BA2-4F7D-AC0B-8AC8030BE90F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34125E08-7BA2-4F7D-AC0B-8AC8030BE90F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34125E08-7BA2-4F7D-AC0B-8AC8030BE90F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34125E08-7BA2-4F7D-AC0B-8AC8030BE90F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FA9846-CCCB-4761-BFED-30F12C674020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FA9846-CCCB-4761-BFED-30F12C674020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FA9846-CCCB-4761-BFED-30F12C674020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FA9846-CCCB-4761-BFED-30F12C674020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB531B5-4A2E-442D-9824-4BC7747F9380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB531B5-4A2E-442D-9824-4BC7747F9380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB531B5-4A2E-442D-9824-4BC7747F9380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB531B5-4A2E-442D-9824-4BC7747F9380}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0FC6AE4-B159-46C7-9A1A-9E328BB23694} = {24F84347-9ABC-41BA-94C0-A8D616CB67D3}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://stuffidosometimes.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FSBO.MainSite\\FSBO.MainSite.csproj
+		SccProjectName1 = FSBO.MainSite
+		SccLocalPath1 = FSBO.MainSite
+		SccProjectUniqueName2 = FSBO.Application\\FSBO.Application.csproj
+		SccProjectName2 = FSBO.Application
+		SccLocalPath2 = FSBO.Application
+		SccProjectUniqueName3 = FSBO.Database\\FSBO.Database.sqlproj
+		SccProjectName3 = FSBO.Database
+		SccLocalPath3 = FSBO.Database
+		SccProjectUniqueName4 = FSBO.Scraper\\FSBO.Scraper.csproj
+		SccProjectName4 = FSBO.Scraper
+		SccLocalPath4 = FSBO.Scraper
+		SccProjectUniqueName5 = FSBO.Installer\\FSBO.Installer.csproj
+		SccProjectName5 = FSBO.Installer
+		SccLocalPath5 = FSBO.Installer
+		SccProjectUniqueName6 = FSBO.DAL\\FSBO.DAL.csproj
+		SccProjectName6 = FSBO.DAL
+		SccLocalPath6 = FSBO.DAL
+		SccProjectUniqueName7 = FSBO.Installer.Test\\FSBO.Installer.Test.csproj
+		SccProjectTopLevelParentUniqueName7 = FSBO.sln
+		SccProjectName7 = FSBO.Installer.Test
+		SccLocalPath7 = FSBO.Installer.Test
+		SccProjectUniqueName8 = FSBO.WebServices.Client\\FSBO.WebServices.Client.csproj
+		SccProjectName8 = FSBO.WebServices.Client
+		SccLocalPath8 = FSBO.WebServices.Client
+		SccProjectUniqueName9 = FSBO.WebServices\\FSBO.WebServices.csproj
+		SccProjectName9 = FSBO.WebServices
+		SccLocalPath9 = FSBO.WebServices
+		SccProjectUniqueName10 = FSBO.WebServices.TsClientGenerator\\FSBO.WebServices.TsClientGenerator.csproj
+		SccProjectName10 = FSBO.WebServices.TsClientGenerator
+		SccLocalPath10 = FSBO.WebServices.TsClientGenerator
+		SccProjectUniqueName11 = FSBO.WebServices.CsClientGenerator\\FSBO.WebServices.CsClientGenerator.csproj
+		SccProjectName11 = FSBO.WebServices.CsClientGenerator
+		SccLocalPath11 = FSBO.WebServices.CsClientGenerator
+		SccProjectUniqueName12 = FSBO.Distributor\\FSBO.Distributor.csproj
+		SccProjectName12 = FSBO.Distributor
+		SccLocalPath12 = FSBO.Distributor
+		SccProjectUniqueName13 = FSBO.ClientPortal\\FSBO.ClientPortal.csproj
+		SccProjectName13 = FSBO.ClientPortal
+		SccLocalPath13 = FSBO.ClientPortal
+	EndGlobalSection
+EndGlobal

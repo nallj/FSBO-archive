@@ -1,0 +1,7 @@
+﻿
+/*header { background-color:#0094ff }*/
+
+nav { background-image: linear-gradient(to bottom,#0094ff 0,#0072ff 100%) }
+nav a { color:#333 }
+nav li.active { background:#000 }
+nav a.active { background:lime }
